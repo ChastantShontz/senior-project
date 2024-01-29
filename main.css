@@ -18,7 +18,8 @@ body {
 }
 
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   background: var(--blue);
   height: 10em;
   width: 100%;
