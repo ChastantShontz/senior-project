@@ -51,7 +51,7 @@ header {
   transition: background .25s ease 0s;
 }
 
-.linkLink:hover {
+.linkLink:hover, .currentLink {
   background: linear-gradient(to right, var(--linkBlue) 0% 50%, var(--lightGray) 50% 100%) left / 200% 100%;
 }
 
@@ -66,7 +66,7 @@ header {
   transition: right .25s ease 0s;
 }
 
-.linkLink:hover::after {
+.linkLink:hover::after, .currentLink::after {
   right: 0;
 }
 
