@@ -42,16 +42,32 @@ header {
 
 .linkLink {
   display: inline-block;
-  color: var(--lightGray);
+  position: relative;
+  background: linear-gradient(to right, var(--linkBlue) 0% 50%, var(--lightGray) 50% 100%) right / 200% 100%;
+  background-clip: text !important;
+  color: transparent;
   font-size: 1.5em;
   font-weight: bold;
-  transition: all .1s ease 0s;
+  transition: background .25s ease 0s;
 }
 
-.linkLink:hover, .currentLink {
-  color: var(--linkBlue);
-  text-decoration: underline;
-  transform: scale(1.1);
+.linkLink:hover {
+  background: linear-gradient(to right, var(--linkBlue) 0% 50%, var(--lightGray) 50% 100%) left / 200% 100%;
+}
+
+.linkLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: var(--linkBlue);
+  height: .1em;
+  transition: right .25s ease 0s;
+}
+
+.linkLink:hover::after {
+  right: 0;
 }
 
 /* Color Variables */
