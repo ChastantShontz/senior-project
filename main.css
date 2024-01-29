@@ -39,14 +39,11 @@ header {
   align-items: center;
 }
 
-.link {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 .linkLink {
   display: inline-block;
   color: var(--lightGray);
+  font-size: 1.5em;
+  font-weight: bold;
   transition: all .1s ease 0s;
 }
 
