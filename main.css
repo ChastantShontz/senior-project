@@ -1,0 +1,14 @@
+/* Element Styles */
+
+* {
+  accent-color: var(--blue);
+}
+
+*::selection {
+  background: var(--blue) !important;
+  color: var(--white) !important;
+}
+
+html {
+  font-size: 1em;
+}
