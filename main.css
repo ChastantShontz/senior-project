@@ -49,11 +49,15 @@ header {
   color: transparent;
   font-size: 1.5em;
   font-weight: bold;
-  transition: background .25s ease 0s;
+  transition: all .25s ease 0s;
 }
 
 .linkLink:hover, .currentLink {
   background: text linear-gradient(to right, var(--linkBlue) 0% 50%, var(--lightGray) 50% 100%) left / 200% 100%;
+}
+
+.linkLink:active {
+  transform: rotate(-5deg);
 }
 
 .linkLink::after {
