@@ -21,6 +21,7 @@ header {
   background: var(--blue);
   height: 10em;
   width: 100%;
+  box-shadow: 0 1em 10em .1em var(--blue);
 }
 
 #nav {
