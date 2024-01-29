@@ -12,3 +12,52 @@
 html {
   font-size: 1em;
 }
+
+body {
+  background: var(--lightGray);
+}
+
+header {
+  background: var(--blue);
+  height: 10em;
+  width: 100%;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 2em;
+  align-items: center;
+}
+
+#links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  align-items: center;
+}
+
+.link {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.linkLink {
+  display: inline-block;
+  color: var(--lightGray);
+  transition: all .1s ease 0s;
+}
+
+.linkLink:hover, .currentLink {
+  color: var(--linkBlue);
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+/* Color Variables */
+
+:root {
+  --linkBlue: #789FDE;
+}
