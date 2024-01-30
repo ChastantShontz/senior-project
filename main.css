@@ -21,7 +21,7 @@ header {
   z-index: 1;
   position: sticky;
   top: 0;
-  background: var(--blue);
+  background: linear-gradient(175deg, #1B376F, 20%, var(--blue), 60%, #244994);
   width: 100%;
   padding: 2em;
   box-shadow: 1em 1em 10em .1em var(--black);
@@ -81,8 +81,12 @@ header {
   right: 0;
 }
 
+main {
+  height: 50vh;
+}
+
 footer {
-  background: var(--blue);
+  background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
   padding: 2em;
 }
