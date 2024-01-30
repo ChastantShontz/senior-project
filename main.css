@@ -22,8 +22,8 @@ header {
   position: sticky;
   top: 0;
   background: var(--blue);
-  height: 10em;
   width: 100%;
+  padding: 2em;
   box-shadow: 1em 1em 10em .1em var(--black);
 }
 
@@ -32,7 +32,6 @@ header {
   justify-content: space-between;
   height: 100%;
   width: 100%;
-  padding: 2em;
   align-items: center;
 }
 
@@ -80,8 +79,8 @@ header {
 
 footer {
   background: var(--blue);
-  height: 10em;
   width: 100%;
+  padding: 2em;
 }
 
 /* Color Variables */
