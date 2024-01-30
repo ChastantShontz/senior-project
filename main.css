@@ -88,9 +88,17 @@ footer {
 }
 
 .footerText {
+  color: var(--textBlue);
+}
+
+.footerHeading {
   margin-top: .5em;
   margin-bottom: .5em;
-  color: var(--textBlue);
+}
+
+.footerBody {
+  margin-top: .33em;
+  margin-bottom: .33em;
 }
 
 #termsOfService, #copyright {
@@ -98,15 +106,20 @@ footer {
   text-align: center;
 }
 
-#termsOfServiceLink {
+.footerList {
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+.footerLink {
   color: inherit;
 }
 
-#termsOfServiceLink:hover {
+.footerLink:hover {
   text-decoration: underline;
 }
 
-#termsOfServiceLink:active {
+.footerLink:active {
   color: var(--linkBlue);
 }
 
