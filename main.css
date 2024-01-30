@@ -46,7 +46,7 @@ header {
 
 .navListItem {
   border-radius: .5em;
-  background: linear-gradient(to right, var(--textBlue), var(--textBlue)) left / 0 100%;
+  background: linear-gradient(to right, rgba(31, 7, 87, .5), rgba(31, 7, 87, .5)) left / 0 100%;
   padding-left: .5em;
   padding-right: .5em;
   padding-top: .1em;
@@ -58,6 +58,10 @@ header {
 }
 
 .navListItem:has(.navLink:hover) {
+  background: linear-gradient(to right, rgba(31, 7, 87, .5), rgba(31, 7, 87, .5)) left / 100% 100%;
+}
+
+.navListItem:has(.navLink:active) {
   background: linear-gradient(to right, var(--textBlue), var(--textBlue)) left / 100% 100%;
 }
 
@@ -162,12 +166,13 @@ footer {
 }
 
 .footerLink:hover {
+  background: rgba(31, 7, 87, .5);
+  color: var(--linkBlue);
   text-decoration: underline;
 }
 
 .footerLink:active {
   background: var(--textBlue);
-  color: var(--linkBlue);
 }
 
 .currentFooterLink {
