@@ -44,13 +44,17 @@ header {
   align-items: center;
 }
 
+.link {
+  color: transparent;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .linkLink {
   display: inline-block;
   position: relative;
   background: text linear-gradient(to right, var(--linkBlue) 0% 50%, var(--lightGray) 50% 100%) right / 200% 100%;
-  color: transparent;
-  font-size: 1.5em;
-  font-weight: bold;
+  color: inherit;
   transition: all .25s ease 0s;
 }
 
