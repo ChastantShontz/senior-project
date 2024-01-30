@@ -91,7 +91,7 @@ footer {
   padding: 2em;
 }
 
-#data {
+#info {
   display: flex;
   justify-content: space-around;
   width: 100%;
