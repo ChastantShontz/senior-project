@@ -106,9 +106,13 @@ footer {
   text-align: center;
 }
 
-.footerList {
+.footerListItem {
   margin-top: .25em;
   margin-bottom: .25em;
+}
+
+.footerListRoot {
+  list-style: none;
 }
 
 .footerLink {
