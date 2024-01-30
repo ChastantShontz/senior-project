@@ -83,6 +83,27 @@ footer {
   padding: 2em;
 }
 
+.footerText {
+  color: var(--textBlue);
+}
+
+#termsOfService {
+  width: 100%;
+  text-align: center;
+}
+
+#termsOfServiceLink {
+  color: inherit;
+}
+
+#termsOfServiceLink:hover {
+  text-decoration: underline;
+}
+
+#termsOfServiceLink:active {
+  color: var(--linkBlue);
+}
+
 /* Color Variables */
 
 :root {
