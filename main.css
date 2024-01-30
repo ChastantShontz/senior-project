@@ -35,7 +35,7 @@ header {
   align-items: center;
 }
 
-#links {
+#navLinks {
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -44,13 +44,13 @@ header {
   align-items: center;
 }
 
-.link {
+.navListItem {
   color: transparent;
   font-size: 1.5em;
   font-weight: bold;
 }
 
-.linkLink {
+.navLink {
   display: inline-block;
   position: relative;
   background: text linear-gradient(to right, var(--linkBlue) 0% 50%, var(--lightGray) 50% 100%) right / 200% 100%;
@@ -58,15 +58,15 @@ header {
   transition: all .25s ease 0s;
 }
 
-.linkLink:hover, .currentLink {
+.navLink:hover, .currentNavLink {
   background: text linear-gradient(to right, var(--linkBlue) 0% 50%, var(--lightGray) 50% 100%) left / 200% 100%;
 }
 
-.linkLink:active {
+.navLink:active {
   transform: rotate(-5deg);
 }
 
-.linkLink::after {
+.navLink::after {
   content: "";
   position: absolute;
   left: 0;
@@ -77,7 +77,7 @@ header {
   transition: right .25s ease 0s;
 }
 
-.linkLink:hover::after, .currentLink::after {
+.navLink:hover::after, .currentNavLink::after {
   right: 0;
 }
 
