@@ -100,10 +100,6 @@ header {
   right: 0;
 }
 
-main {
-  height: 50vh;
-}
-
 footer {
   background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
