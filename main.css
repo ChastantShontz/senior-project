@@ -185,6 +185,17 @@ footer {
   display: inline;
 }
 
+/* Animation Effects */
+
+@keyframes changePage {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
 /* Color Variables */
 
 :root {

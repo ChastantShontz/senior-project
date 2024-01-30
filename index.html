@@ -32,7 +32,7 @@
     <link href="normalize.css" hreflang="en-us" rel="preload stylesheet" as="style" type="text/css">
     <link href="main.css" hreflang="en-us" rel="preload stylesheet" as="style" type="text/css">
   </head>
-  <body>
+  <body onload="if (sessionStorage.firstPage == undefined) {sessionStorage.firstPage = 'true'}; changePage()">
     <header>
       <nav id="nav">
         <p id="placeholder">[Logo will go here]</p>
