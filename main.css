@@ -181,6 +181,10 @@ footer {
   text-decoration: underline;
 }
 
+#addressFooterAddress {
+  display: inline;
+}
+
 /* Color Variables */
 
 :root {
