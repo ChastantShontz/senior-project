@@ -100,7 +100,7 @@ footer {
   margin-bottom: .5em;
 }
 
-.footerBody {
+.footerBody, .footerListItemRoot {
   margin-top: .33em;
   margin-bottom: .33em;
 }
@@ -110,9 +110,20 @@ footer {
   text-align: center;
 }
 
-.footerListItem {
+.footerListItemNested {
+  list-style: none;
   margin-top: .25em;
   margin-bottom: .25em;
+}
+
+.footerListItemNested::marker {
+  content: "-\00a0";
+}
+
+#sitemapLists {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footerListRoot {
