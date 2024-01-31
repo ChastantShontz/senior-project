@@ -24,6 +24,7 @@ header {
   background: linear-gradient(175deg, #1B376F, 20%, var(--blue), 60%, #244994);
   width: 100%;
   padding: 2em;
+  border-bottom: .01em solid var(--textBlue);
   box-shadow: 1em 1em 10em .1em var(--black);
 }
 
@@ -197,6 +198,7 @@ footer {
   background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
   padding: 2em;
+  border-top: .01em solid var(--textBlue);
 }
 
 #info {
