@@ -19,7 +19,11 @@ h1 {
   font-size: 2em;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -42,7 +46,8 @@ q {
   font-style: italic;
 }
 
-q::before, q::after {
+q::before,
+q::after {
   font-style: normal;
   cursor: text;
 }
@@ -51,7 +56,8 @@ q > q {
   font-style: normal;
 }
 
-q > q::before, q > q::after {
+q > q::before,
+q > q::after {
   font-style: italic;
 }
 
@@ -112,7 +118,8 @@ pre {
   margin-bottom: 0;
 }
 
-sup, sub {
+sup,
+sub {
   font-size: .5em;
 }
 
@@ -124,7 +131,8 @@ span.normalStyle {
   font-style: normal;
 }
 
-span.material-icons, span.material-symbols-outlined {
+span.material-icons,
+span.material-symbols-outlined {
   font-size: 1em;
 }
 
@@ -145,7 +153,10 @@ a.defaultLink:active {
   color: var(--violet);
 }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   display: inline-block;
   border-radius: 0;
   background: var(--gray);
@@ -157,11 +168,17 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
 }
 
-button.defaultButton, input[type="button"].defaultButton, input[type="reset"].defaultButton, input[type="submit"].defaultButton {
+button.defaultButton,
+input[type="button"].defaultButton,
+input[type="reset"].defaultButton,
+input[type="submit"].defaultButton {
   transition: transform .1s ease 0s;
 }
 
-button.defaultButton:active, input[type="button"].defaultButton:active, input[type="reset"].defaultButton:active, input[type="submit"].defaultButton:active {
+button.defaultButton:active,
+input[type="button"].defaultButton:active,
+input[type="reset"].defaultButton:active,
+input[type="submit"].defaultButton:active {
   transform: scale(.95);
 }
 
@@ -301,11 +318,26 @@ label {
   cursor: text;
 }
 
-input[type="checkbox"], input[type="color"], input[type="date"], input[type="datetime-local"], input[type="file"], input[type="image"], input[type="radio"], input[type="range"], input[type="time"] {
+input[type="checkbox"],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="file"],
+input[type="image"],
+input[type="radio"],
+input[type="range"],
+input[type="time"] {
   cursor: pointer;
 }
 
-input[type="date"], input[type="datetime-local"], input[type="email"], input[type="file"], input[type="month"], input[type="number"], input[type="password"], input[type="text"] {
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="text"] {
   font-size: 1em;
 }
 
