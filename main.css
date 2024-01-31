@@ -129,6 +129,10 @@ header {
   align-items: flex-start;
 }
 
+#picCont {
+  width: 40%;
+}
+
 #pic {
   border-radius: .5em;
   background-clip: content-box,
@@ -139,8 +143,16 @@ header {
   background-position: center;
   background-size: cover;
   height: 20em;
-  width: 40%;
+  width: 100%;
   border: .25em solid transparent;
+  margin-bottom: .25em;
+}
+
+#picCaption {
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: .9em;
 }
 
 #intro {
