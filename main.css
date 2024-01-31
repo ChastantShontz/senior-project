@@ -110,17 +110,46 @@ header {
 
 #profile {
   border-radius: 1em;
-  background-clip: content-box,
+  background-clip: padding-box,
                    border-box;
   background-image: linear-gradient(to right, var(--white), var(--white)),
                     linear-gradient(175deg, #1B376F, var(--blue), #244994);
   background-origin: border-box;
-  height: 10em;
   width: 60%;
+  padding: 2em;
   border: .5em solid transparent;
   margin-top: 5em;
   margin-bottom: 5em;
   box-shadow: 1em 1em 10em .1em var(--black);
+}
+
+#introCont {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#pic {
+  border-radius: .5em;
+  background-clip: content-box,
+                   border-box;
+  background-image: url(img/profile.png),
+                    linear-gradient(175deg, #1B376F, var(--blue), #244994);
+  background-origin: border-box;
+  background-position: center;
+  background-size: cover;
+  height: 20em;
+  width: 40%;
+  border: .25em solid transparent;
+}
+
+#intro {
+  width: 40%;
+}
+
+#introHeading {
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 footer {
