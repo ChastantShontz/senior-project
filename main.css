@@ -54,7 +54,7 @@ header {
   color: transparent;
   font-size: 1.5em;
   font-weight: bold;
-  transition: background .25s ease 0s;
+  transition: all .25s ease 0s;
 }
 
 .navListItem:has(.navLink:hover) {
@@ -63,6 +63,7 @@ header {
 
 .navListItem:has(.navLink:active) {
   background: linear-gradient(to right, var(--textBlue), var(--textBlue)) left / 100% 100%;
+  transform: rotate(-5deg);
 }
 
 .currentNav {

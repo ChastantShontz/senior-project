@@ -5,6 +5,17 @@ function changePage() {
     sessionStorage.firstPage = "false";
   }
   else if (sessionStorage.firstPage == "false") {
+    for (var i = 0; i < document.getElementsByClassName("navListItem").length; i++) {
+      if (document.getElementsByClassName("navListItem")[i].classList.contains("currentNav")) {
+        document.getElementsByClassName("navListItem")[i].style.animation = "changePage .25s ease 0s 1 forwards";
+        const reset = (x) => {
+          setTimeout(() => (
+            document.getElementsByClassName("navListItem")[x].style.animation = "none"
+          ), 250);
+        }
+        reset(i);
+      }
+    }
     for (var i = 0; i < document.getElementsByClassName("navLink").length; i++) {
       if (document.getElementsByClassName("navLink")[i].classList.contains("currentNavLink")) {
         document.getElementsByClassName("navLink")[i].style.animation = "changePage .25s ease 0s 1 forwards";
