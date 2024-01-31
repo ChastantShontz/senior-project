@@ -181,6 +181,7 @@ header {
   background: text var(--blue);
   color: transparent;
   font-size: 3em;
+  font-weight: bold;
 }
 
 .contactMeProfileLink {
