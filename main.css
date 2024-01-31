@@ -126,6 +126,7 @@ header {
 #introCont {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 2em;
   align-items: flex-start;
 }
 
@@ -180,6 +181,22 @@ footer {
   justify-content: space-around;
   width: 100%;
   align-items: flex-start;
+}
+
+#contactMeProfile {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contactMeProfileListItem {
+  color: var(--blue);
+  font-size: 3em;
+}
+
+.contactMeProfileLink {
+  color: inherit;
 }
 
 .footerText {
