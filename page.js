@@ -16,17 +16,6 @@ function changePage() {
         reset(i);
       }
     }
-    for (var i = 0; i < document.getElementsByClassName("navLink").length; i++) {
-      if (document.getElementsByClassName("navLink")[i].classList.contains("currentNavLink")) {
-        document.getElementsByClassName("navLink")[i].style.animation = "changePage .25s ease 0s 1 forwards";
-        const reset = (x) => {
-          setTimeout(() => (
-            document.getElementsByClassName("navLink")[x].style.animation = "none"
-          ), 250);
-        }
-        reset(i);
-      }
-    }
   }
 }
 

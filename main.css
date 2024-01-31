@@ -82,10 +82,6 @@ header {
   background: text linear-gradient(to right, var(--linkBlue) 0% 50%, var(--lightGray) 50% 100%) left / 200% 100%;
 }
 
-.navLink:active {
-  transform: rotate(-5deg);
-}
-
 .navLink::after {
   content: "";
   position: absolute;
