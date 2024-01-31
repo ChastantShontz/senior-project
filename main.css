@@ -36,6 +36,24 @@ header {
   align-items: center;
 }
 
+#headshot {
+  position: relative;
+  border-radius: 50%;
+  background: url(img/headshot.png) center / cover;
+  height: 5em;
+  width: 5em;
+  border: .2em solid var(--textBlue);
+}
+
+#headshotLink {
+  position: absolute;
+  left: -.2em;
+  right: -.2em;
+  top: -.2em;
+  bottom: -.2em;
+  border-radius: 50%;
+}
+
 #navLinks {
   list-style: none;
   display: flex;
