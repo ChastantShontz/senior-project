@@ -187,12 +187,12 @@ header {
 }
 
 .contactMeProfileLink {
-  background: text linear-gradient(60deg, var(--blue) 0% 40%, var(--shimmerBlue) 47.5% 52.5%, var(--blue) 60% 100%) -2em;
+  background: text linear-gradient(60deg, var(--blue) 0% 40%, var(--shimmerWhite) 47.5% 52.5%, var(--blue) 60% 100%) -2em;
   color: inherit;
 }
 
 .contactMeProfileLink:hover {
-  background: text linear-gradient(60deg, var(--blue) 0% 40%, var(--shimmerBlue) 47.5% 52.5%, var(--blue) 60% 100%) 2em;
+  background: text linear-gradient(60deg, var(--blue) 0% 40%, var(--shimmerWhite) 47.5% 52.5%, var(--blue) 60% 100%) 2em;
   transition: background 2s ease 0s;
 }
 
@@ -295,5 +295,5 @@ footer {
 :root {
   --linkBlue: #789FDE;
   --textBlue: #1F0757;
-  --shimmerBlue: #F5F5FF;
+  --shimmerWhite: #F5F5FF;
 }
