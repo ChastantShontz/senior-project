@@ -170,19 +170,6 @@ header {
   font-size: 1.1em;
 }
 
-footer {
-  background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
-  width: 100%;
-  padding: 2em;
-}
-
-#info {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  align-items: flex-start;
-}
-
 #contactMeProfile {
   list-style: none;
   display: flex;
@@ -197,6 +184,19 @@ footer {
 
 .contactMeProfileLink {
   color: inherit;
+}
+
+footer {
+  background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
+  width: 100%;
+  padding: 2em;
+}
+
+#info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: flex-start;
 }
 
 .footerText {
