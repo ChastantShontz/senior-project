@@ -6,7 +6,7 @@ function changePage() {
   }
   else if (sessionStorage.firstPage == "false") {
     for (var i = 0; i < document.getElementsByClassName("navListItem").length; i++) {
-      if (document.getElementsByClassName("navListItem")[i].classList.contains("currentNav")) {
+      if (document.getElementsByClassName("navListItem")[i].classList.contains("currentNavListItem")) {
         document.getElementsByClassName("navListItem")[i].style.animation = "changePage .25s ease 0s 1 forwards";
         const reset = (x) => {
           setTimeout(() => (
