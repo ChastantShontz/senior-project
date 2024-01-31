@@ -96,7 +96,8 @@ header {
   transition: right .25s ease 0s;
 }
 
-.navLink:hover::after, .currentNavLink::after {
+.navLink:hover::after,
+.currentNavLink::after {
   right: 0;
 }
 
@@ -109,8 +110,10 @@ header {
 
 #profile {
   border-radius: 1em;
-  background-clip: content-box, border-box;
-  background-image: linear-gradient(to right, var(--white), var(--white)), linear-gradient(175deg, #1B376F, var(--blue), #244994);
+  background-clip: content-box,
+                   border-box;
+  background-image: linear-gradient(to right, var(--white), var(--white)),
+                    linear-gradient(175deg, #1B376F, var(--blue), #244994);
   background-origin: border-box;
   height: 10em;
   width: 60%;
@@ -141,12 +144,14 @@ footer {
   margin-bottom: .5em;
 }
 
-.footerBody, .footerListItemRoot {
+.footerBody,
+.footerListItemRoot {
   margin-top: .33em;
   margin-bottom: .33em;
 }
 
-#termsOfService, #copyright {
+#termsOfService,
+#copyright {
   width: 100%;
   text-align: center;
 }
