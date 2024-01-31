@@ -100,6 +100,25 @@ header {
   right: 0;
 }
 
+#profileCont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+#profile {
+  border-radius: 1em;
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(to right, var(--white), var(--white)), linear-gradient(175deg, #1B376F, var(--blue), #244994);
+  background-origin: border-box;
+  height: 10em;
+  width: 60%;
+  border: .5em solid transparent;
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
 footer {
   background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
