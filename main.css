@@ -118,8 +118,9 @@ header {
   height: 10em;
   width: 60%;
   border: .5em solid transparent;
-  margin-top: 10em;
-  margin-bottom: 10em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  box-shadow: 1em 1em 10em .1em var(--black);
 }
 
 footer {
