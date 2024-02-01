@@ -207,8 +207,38 @@ header {
   color: inherit;
 }
 
+.contactMeProfileLink:has(ion-icon) {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
 .contactMeProfileLink:hover {
   background: text linear-gradient(60deg, transparent 0% 40%, var(--shimmerWhite) 47.5% 52.5%, transparent 60% 100%) 2em;
+  transition: background 2s ease 0s;
+}
+
+ion-icon {
+  font-size: 1em;
+}
+
+ion-icon.contactMeProfileIcon {
+  stroke: var(--blue);
+  fill: var(--blue);
+}
+
+.contactMeProfileIconCover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(60deg, transparent 0% 40%, var(--white) 47.5% 52.5%, transparent 60% 100%) -2em;
+}
+
+.contactMeProfileIconCover:hover {
+  background: linear-gradient(60deg, transparent 0% 40%, var(--white) 47.5% 52.5%, transparent 60% 100%) 2em;
   transition: background 2s ease 0s;
 }
 
