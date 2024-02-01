@@ -70,7 +70,7 @@
     <link href="normalize.css" hreflang="en-us" rel="preload stylesheet" as="style" type="text/css">
     <link href="main.css" hreflang="en-us" rel="preload stylesheet" as="style" type="text/css">
   </head>
-  <body onload="if (sessionStorage.firstPage == undefined) {sessionStorage.firstPage = 'true'}; changePage()">
+  <body onload="if (sessionStorage.firstPage == undefined) {sessionStorage.firstPage = 'true'}; changePage()" onscroll="resizeHeader('profile')">
     <header>
       <nav id="nav">
         <div id="headshot">

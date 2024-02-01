@@ -17,6 +17,22 @@ function changePage() {
       }
     }
   }
+  window.scrollTo(0, 0);
+}
+
+function resizeHeader(x) {
+  var element = x;
+  if ((document.getElementById(element).getBoundingClientRect().top < document.querySelector("header").getBoundingClientRect().bottom) || (document.getElementById(element).getBoundingClientRect().top > document.querySelector("header").getBoundingClientRect().bottom)) {
+    var heightValue = document.getElementById(element).getBoundingClientRect().top;
+    if (heightValue < 80) {
+      heightValue = 80;
+    }
+    else if (heightValue > 160) {
+      heightValue = 160;
+    }
+    document.querySelector("header").style.height = heightValue + "px";
+    document.querySelector("header").style.transition = "height 0s ease 0s";
+  }
 }
 
 function downloadResume() {
