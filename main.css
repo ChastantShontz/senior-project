@@ -119,14 +119,14 @@ header {
   right: 0;
 }
 
-#profileCont {
+.modalCont {
   display: flex;
   justify-content: center;
   width: 100%;
   align-items: center;
 }
 
-#profile {
+.modal {
   border-radius: 1em;
   background-clip: padding-box,
                    border-box;
