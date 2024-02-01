@@ -19,23 +19,22 @@ body {
 
 header {
   z-index: 1;
-  display: flex;
-  justify-content: center;
   position: sticky;
   top: 0;
   background: linear-gradient(175deg, #1B376F, 20%, var(--blue), 60%, #244994);
   height: 160px;
   width: 100%;
   border-bottom: .01em solid var(--textBlue);
-  align-items: center;
   box-shadow: 1em 1em 10em .1em var(--black);
 }
 
 #nav {
   display: flex;
   justify-content: space-between;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
   align-items: center;
 }
 
@@ -43,8 +42,8 @@ header {
   position: relative;
   border-radius: 50%;
   background: url(img/headshot.png) center / cover;
-  height: 5em;
-  width: 5em;
+  height: 150px;
+  width: 150px;
   border: .2em solid var(--textBlue);
 }
 

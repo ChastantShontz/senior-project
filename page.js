@@ -32,6 +32,9 @@ function resizeHeader(x) {
     }
     document.querySelector("header").style.height = heightValue + "px";
     document.querySelector("header").style.transition = "height 0s ease 0s";
+    document.getElementById("headshot").style.height = (heightValue - 10) + "px";
+    document.getElementById("headshot").style.width = (heightValue - 10) + "px";
+    document.getElementById("headshot").style.transition = "all 0s ease 0s";
   }
 }
 
