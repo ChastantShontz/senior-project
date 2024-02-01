@@ -203,12 +203,12 @@ header {
 }
 
 .contactMeProfileLink {
-  background: text linear-gradient(60deg, var(--blue) 0% 40%, var(--shimmerWhite) 47.5% 52.5%, var(--blue) 60% 100%) -2em;
+  background: text linear-gradient(60deg, transparent 0% 40%, var(--shimmerWhite) 47.5% 52.5%, transparent 60% 100%) -2em;
   color: inherit;
 }
 
 .contactMeProfileLink:hover {
-  background: text linear-gradient(60deg, var(--blue) 0% 40%, var(--shimmerWhite) 47.5% 52.5%, var(--blue) 60% 100%) 2em;
+  background: text linear-gradient(60deg, transparent 0% 40%, var(--shimmerWhite) 47.5% 52.5%, transparent 60% 100%) 2em;
   transition: background 2s ease 0s;
 }
 
