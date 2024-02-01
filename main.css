@@ -244,6 +244,19 @@ ion-icon.contactMeProfileIcon {
   transition: background 2s ease 0s;
 }
 
+#websitesHeading {
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#websitesDisplay {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 20% 20% 20% 20% 20% 20% 20% 20% 20%;
+  width: 100%;
+}
+
 footer {
   background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
