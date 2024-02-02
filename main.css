@@ -244,10 +244,27 @@ ion-icon.contactMeProfileIcon {
   transition: background 2s ease 0s;
 }
 
+#websitesHeadingCont {
+  margin-bottom: 1em;
+}
+
 #websitesHeading {
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: .25em;
   text-align: center;
+}
+
+#websitesSubheadings {
+  width: 100%;
+}
+
+.websitesSubheading {
+  width: 100%;
+  text-align: center;
+}
+
+#websitesSubheading1 {
+  margin-bottom: .25em;
 }
 
 #websitesDisplay {
