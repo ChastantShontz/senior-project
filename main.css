@@ -269,8 +269,7 @@ ion-icon.contactMeProfileIcon {
 
 #websitesDisplay {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-columns: repeat(2, 50%);
   width: 100%;
 }
 
