@@ -274,10 +274,6 @@ ion-icon.contactMeProfileIcon {
   width: 100%;
 }
 
-.websitesGridItem {
-  grid-row-start: 1;
-}
-
 .websitesLeftGridItem {
   grid-column-start: 1;
 }
