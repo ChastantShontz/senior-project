@@ -297,6 +297,12 @@ ion-icon.contactMeIcon {
   border: .2em solid var(--blue);
 }
 
+.websiteDivider {
+  border: .05em solid var(--blue);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 footer {
   background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
