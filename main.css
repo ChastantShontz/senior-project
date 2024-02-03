@@ -326,6 +326,14 @@ ion-icon.contactMeIcon {
   font-weight: bold;
 }
 
+.websiteLink:hover {
+  background: rgba(45, 91, 184, .9);
+}
+
+.websiteLink:active {
+  background: rgba(45, 91, 184, .75);
+}
+
 .websiteHeading {
   margin-top: .25em;
   margin-bottom: .25em;
