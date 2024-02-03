@@ -277,6 +277,10 @@ ion-icon.contactMeIcon {
   grid-auto-rows: 100%;
 }
 
+.websiteGridItem {
+  grid-row-start: 1;
+}
+
 .websiteLeftGridItem {
   grid-column-start: 1;
 }
