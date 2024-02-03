@@ -277,11 +277,11 @@ ion-icon.contactMeIcon {
   grid-auto-rows: 100%;
 }
 
-.websitesLeftGridItem {
+.websiteLeftGridItem {
   grid-column-start: 1;
 }
 
-.websitesRightGridItem {
+.websiteRightGridItem {
   grid-column-start: 2;
 }
 
