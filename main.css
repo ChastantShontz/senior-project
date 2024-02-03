@@ -292,6 +292,11 @@ ion-icon.contactMeIcon {
   grid-column-start: 2;
 }
 
+.websiteFrame {
+  border-radius: .5em;
+  border: .2em solid var(--blue);
+}
+
 footer {
   background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
