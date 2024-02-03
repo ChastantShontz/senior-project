@@ -319,6 +319,10 @@ ion-icon.contactMeIcon {
   margin-bottom: .25em;
 }
 
+.websiteDescription {
+  margin-left: .5em;
+}
+
 .websiteDivider {
   border: .05em solid var(--blue);
   margin-top: 2em;
