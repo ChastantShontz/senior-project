@@ -279,9 +279,6 @@ ion-icon.contactMeIcon {
 
 .websiteGridItem {
   grid-row-start: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .websiteLeftGridItem {
@@ -292,9 +289,28 @@ ion-icon.contactMeIcon {
   grid-column-start: 2;
 }
 
+.websiteFrameCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.websiteDescriptionCont {
+  padding-left: 1em;
+}
+
 .websiteFrame {
   border-radius: .5em;
   border: .2em solid var(--blue);
+}
+
+.websiteHeading {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.websiteDescription {
+  margin-left: .5em;
 }
 
 .websiteDivider {
