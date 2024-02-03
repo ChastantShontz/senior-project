@@ -164,13 +164,13 @@ header {
   height: 20em;
   width: 100%;
   border: .25em solid transparent;
-  margin-bottom: .25em;
+  margin-bottom: .5em;
 }
 
 #picCaption {
   width: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: .5em;
+  padding-right: .5em;
   font-size: .9em;
 }
 
