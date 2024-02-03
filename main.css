@@ -289,19 +289,26 @@ ion-icon.contactMeIcon {
   grid-column-start: 2;
 }
 
-.websiteFrameCont {
+.websiteFrameContCont {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.websiteDescriptionCont {
+.websiteDescriptionContCont {
   padding-left: 1em;
 }
 
 .websiteFrame {
   border-radius: .5em;
   border: .2em solid var(--blue);
+}
+
+.websiteButtonsCont {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .websiteHeading {
