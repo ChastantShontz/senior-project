@@ -314,6 +314,18 @@ ion-icon.contactMeIcon {
   align-items: center;
 }
 
+.websiteLink {
+  border-radius: .5em;
+  background: linear-gradient(175deg, #1B376F, var(--blue), #244994);
+  padding-left: .25em;
+  padding-right: .25em;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  color: var(--white);
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
 .websiteHeading {
   margin-top: .25em;
   margin-bottom: .25em;
