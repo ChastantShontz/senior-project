@@ -302,12 +302,15 @@ ion-icon.contactMeIcon {
 .websiteFrame {
   border-radius: .5em;
   border: .2em solid var(--blue);
+  margin-bottom: .25em;
 }
 
 .websiteButtonsCont {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
   align-items: center;
 }
 
