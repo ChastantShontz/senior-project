@@ -94,13 +94,13 @@ header {
 .navLink {
   display: inline-block;
   position: relative;
-  background: text linear-gradient(to right, var(--linkBlue) 0% 50%, var(--lightGray) 50% 100%) right / 200% 100%;
+  background: text linear-gradient(to right, var(--linkBlue) 0% 50%, var(--white) 50% 100%) right / 200% 100%;
   color: inherit;
   transition: all .25s ease 0s;
 }
 
 .navLink:hover, .currentNavLink {
-  background: text linear-gradient(to right, var(--linkBlue) 0% 50%, var(--lightGray) 50% 100%) left / 200% 100%;
+  background: text linear-gradient(to right, var(--linkBlue) 0% 50%, var(--white) 50% 100%) left / 200% 100%;
 }
 
 .navLink::after {
