@@ -279,6 +279,9 @@ ion-icon.contactMeIcon {
 
 .websiteGridItem {
   grid-row-start: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .websiteLeftGridItem {
