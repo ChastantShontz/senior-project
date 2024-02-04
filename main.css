@@ -411,6 +411,11 @@ ion-icon.contactMeIcon {
 
 .category {
   width: 100%;
+  margin-bottom: 2em;
+}
+
+#jobs {
+  margin-bottom: 0;
 }
 
 .categoryHeading {
