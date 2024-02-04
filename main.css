@@ -394,6 +394,13 @@ ion-icon.contactMeIcon {
   margin-bottom: 0;
 }
 
+#viewSourceCont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
 footer {
   background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
