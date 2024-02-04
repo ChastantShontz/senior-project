@@ -383,7 +383,7 @@ ion-icon.contactMeIcon {
 }
 
 .websiteUrlLink:hover, .websiteUrl:hover > .websiteUrlLink {
-  color: inherit !important;
+  color: inherit;
 }
 
 .websiteDivider {
