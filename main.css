@@ -245,7 +245,7 @@ ion-icon.contactMeIcon {
 }
 
 #websitesHeadingCont {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 #websitesHeading {
@@ -282,10 +282,12 @@ ion-icon.contactMeIcon {
 
 .website:first-child {
   background: radial-gradient(ellipse farthest-side at bottom, var(--blueWhite), 90%, var(--white));
+  padding-top: 0;
 }
 
 .website:last-child {
   background: radial-gradient(ellipse farthest-side at top, var(--blueWhite), 90%, var(--white));
+  padding-bottom: 0;
 }
 
 .websiteGridItem {
