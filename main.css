@@ -364,11 +364,28 @@ ion-icon.contactMeIcon {
 }
 
 .websiteUrl {
-  font-size: 1.1em;
+  border-radius: .1em;
+  background: linear-gradient(175deg, rgba(27, 55, 111, .75), rgba(45, 91, 184, .75), rgba(36, 73, 148, .75)) left / 0 100%;
+  padding: .25em;
+  padding-top: .1em;
+}
+
+.websiteUrl:has(.websiteUrlLink:hover) {
+  background: linear-gradient(175deg, rgba(27, 55, 111, .75), rgba(45, 91, 184, .75), rgba(36, 73, 148, .75)) left / 100% 100%;
+  color: var(--white);
+}
+
+.websiteUrl:has(.websiteUrlLink:active) {
+  background: linear-gradient(175deg, #1B376F, var(--blue), #244994) left / 100% 100%;
 }
 
 .websiteUrlLink {
+  font-size: 1.1em;
   font-weight: bold;
+}
+
+.websiteUrlLink:hover {
+  color: inherit !important;
 }
 
 .websiteDivider {
