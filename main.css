@@ -378,6 +378,10 @@ ion-icon.contactMeIcon {
   font-weight: bold;
 }
 
+#viewSourceLink {
+  font-size: 1em;
+}
+
 .websiteUrlLink:hover, .websiteUrl:hover > .websiteUrlLink {
   color: inherit !important;
 }
