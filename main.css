@@ -370,7 +370,7 @@ ion-icon.contactMeIcon {
   padding-top: .1em;
 }
 
-.websiteUrl:has(.websiteUrlLink:hover) {
+.websiteUrl:hover {
   background: linear-gradient(175deg, rgba(27, 55, 111, .75), rgba(45, 91, 184, .75), rgba(36, 73, 148, .75)) left / 100% 100%;
   color: var(--white);
 }
@@ -384,7 +384,7 @@ ion-icon.contactMeIcon {
   font-weight: bold;
 }
 
-.websiteUrlLink:hover {
+.websiteUrlLink:hover, .websiteUrl:hover > .websiteUrlLink {
   color: inherit !important;
 }
 
