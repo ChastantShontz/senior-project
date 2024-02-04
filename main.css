@@ -205,7 +205,7 @@ header {
 }
 
 .contactMeLink {
-  background: text linear-gradient(60deg, transparent 0% 40%, var(--shimmerWhite) 47.5% 52.5%, transparent 60% 100%) -2em;
+  background: text linear-gradient(60deg, transparent 0% 40%, var(--white) 47.5% 52.5%, transparent 60% 100%) -2em;
   color: inherit;
 }
 
@@ -217,7 +217,7 @@ header {
 }
 
 .contactMeLink:hover {
-  background: text linear-gradient(60deg, transparent 0% 40%, var(--shimmerWhite) 47.5% 52.5%, transparent 60% 100%) 2em;
+  background: text linear-gradient(60deg, transparent 0% 40%, var(--white) 47.5% 52.5%, transparent 60% 100%) 2em;
   transition: background 2s ease 0s;
 }
 
@@ -275,17 +275,17 @@ ion-icon.contactMeIcon {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-auto-rows: 100%;
-  background: linear-gradient(to right, var(--white), 10%, var(--shimmerWhite), 90%, var(--white));
+  background: linear-gradient(to right, var(--white), 10%, var(--blueWhite), 90%, var(--white));
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
 .website:first-child {
-  background: radial-gradient(ellipse farthest-side at bottom, var(--shimmerWhite), 90%, var(--white));
+  background: radial-gradient(ellipse farthest-side at bottom, var(--blueWhite), 90%, var(--white));
 }
 
 .website:last-child {
-  background: radial-gradient(ellipse farthest-side at top, var(--shimmerWhite), 90%, var(--white));
+  background: radial-gradient(ellipse farthest-side at top, var(--blueWhite), 90%, var(--white));
 }
 
 .websiteGridItem {
@@ -483,5 +483,5 @@ footer {
 :root {
   --linkBlue: #789FDE;
   --textBlue: #1F0757;
-  --shimmerWhite: #F5F5FF;
+  --blueWhite: #F5F5FF;
 }
