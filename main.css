@@ -76,6 +76,7 @@ header {
   font-size: 1.5em;
   font-weight: bold;
   transition: all .25s ease 0s;
+  user-select: none;
 }
 
 .navListItem:hover {
@@ -203,6 +204,7 @@ header {
   color: transparent;
   font-size: 3em;
   font-weight: bold;
+  user-select: none;
 }
 
 .contactMeLink {
@@ -305,13 +307,17 @@ ion-icon.contactMeIcon {
   margin-bottom: .25em;
 }
 
-.websiteLinksCont {
+.websiteButtonLinksCont {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding-left: 1em;
   padding-right: 1em;
   align-items: center;
+}
+
+.websiteButtonLink {
+  user-select: none;
 }
 
 .websiteLink {
