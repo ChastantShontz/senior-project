@@ -254,17 +254,9 @@ ion-icon.contactMeIcon {
   text-align: center;
 }
 
-#websitesSubheadings {
-  width: 100%;
-}
-
-.websitesSubheading {
+#websitesSubheading {
   width: 100%;
   text-align: center;
-}
-
-#websitesSubheading1 {
-  margin-bottom: .25em;
 }
 
 #websitesDisplay {
