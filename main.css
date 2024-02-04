@@ -275,6 +275,17 @@ ion-icon.contactMeIcon {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-auto-rows: 100%;
+  background: linear-gradient(to right, var(--white), 10%, var(--shimmerWhite), 90%, var(--white));
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.website:first-child {
+  background: radial-gradient(ellipse farthest-side at bottom, var(--shimmerWhite), 90%, var(--white));
+}
+
+.website:last-child {
+  background: radial-gradient(ellipse farthest-side at top, var(--shimmerWhite), 90%, var(--white));
 }
 
 .websiteGridItem {
@@ -368,8 +379,8 @@ ion-icon.contactMeIcon {
 
 .websiteDivider {
   border: .05em solid var(--blue);
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 footer {
