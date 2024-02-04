@@ -78,11 +78,11 @@ header {
   transition: all .25s ease 0s;
 }
 
-.navListItem:has(.navLink:hover) {
+.navListItem:hover {
   background: linear-gradient(to right, rgba(31, 7, 87, .5), rgba(31, 7, 87, .5)) left / 100% 100%;
 }
 
-.navListItem:has(.navLink:active) {
+.navListItem:active {
   background: linear-gradient(to right, var(--textBlue), var(--textBlue)) left / 100% 100%;
   transform: rotate(-5deg);
 }
