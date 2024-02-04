@@ -358,6 +358,14 @@ ion-icon.contactMeIcon {
   margin-left: .5em;
 }
 
+.websiteUrl {
+  font-size: 1.1em;
+}
+
+.websiteUrlLink {
+  font-weight: bold;
+}
+
 .websiteDivider {
   border: .05em solid var(--blue);
   margin-top: 2em;
