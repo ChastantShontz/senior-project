@@ -90,6 +90,10 @@ header {
   background: var(--textBlue) !important;
 }
 
+.headingInline {
+  display: inline;
+}
+
 .navLink {
   display: inline-block;
   position: relative;
@@ -403,6 +407,18 @@ ion-icon.contactMeIcon {
   justify-content: center;
   width: 100%;
   align-items: center;
+}
+
+.category {
+  width: 100%;
+}
+
+.categoryHeading {
+  width: fit-content;
+}
+
+.categoryHeading::marker {
+  font-size: 1.5em;
 }
 
 footer {
