@@ -244,10 +244,6 @@ ion-icon.contactMeIcon {
   transition: background 2s ease 0s;
 }
 
-#websitesHeadingCont {
-  margin-bottom: 2em;
-}
-
 #websitesHeading {
   width: 100%;
   margin-bottom: .25em;
@@ -272,14 +268,12 @@ ion-icon.contactMeIcon {
   padding-bottom: 2em;
 }
 
-.website:first-child {
+#starWarsApi {
   background: radial-gradient(ellipse farthest-side at bottom, var(--blueWhite), 90%, var(--white));
-  padding-top: 0;
 }
 
-.website:last-child {
+#tributePage {
   background: radial-gradient(ellipse farthest-side at top, var(--blueWhite), 90%, var(--white));
-  padding-bottom: 0;
 }
 
 .websiteGridItem {
