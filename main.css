@@ -73,8 +73,6 @@ header {
   padding-top: .1em;
   padding-bottom: .25em;
   color: transparent;
-  font-size: 1.5em;
-  font-weight: bold;
   transition: all .25s ease 0s;
   user-select: none;
 }
