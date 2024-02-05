@@ -417,7 +417,15 @@ ion-icon.contactMeIcon {
 }
 
 .category {
+  border-radius: .5em;
+  background-clip: padding-box,
+                   border-box;
+  background-image: linear-gradient(to right, var(--white), var(--white)),
+                    linear-gradient(175deg, #1B376F, var(--blue), #244994);
+  background-origin: border-box;
   width: 100%;
+  padding: 1em;
+  border: .2em solid transparent;
   margin-bottom: 2em;
 }
 
