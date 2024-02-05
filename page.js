@@ -21,7 +21,7 @@ function changePage(x) {
       }
     }
     for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
-      if (eval("sessionStorage." + document.getElementsByClassName("category")[i].id + "Open") == "close") {
+      if (eval("sessionStorage." + document.getElementsByClassName("category")[i].id + "Open") == "closed") {
         document.getElementsByClassName("category")[i].open = false;
       }
     }
@@ -56,9 +56,9 @@ function downloadResume(x) {
 function toggleDetails(x) {
   var category = x;
   if (eval("sessionStorage." + category + "Open") == "open") {
-    eval("sessionStorage." + category + "Open = \"close\"");
+    eval("sessionStorage." + category + "Open = \"closed\"");
   }
-  else if (eval("sessionStorage." + category + "Open") == "close") {
+  else if (eval("sessionStorage." + category + "Open") == "closed") {
     eval("sessionStorage." + category + "Open = \"open\"");
   }
 }
