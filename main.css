@@ -447,6 +447,10 @@ ion-icon.contactMeIcon {
   margin-left: .25em;
 }
 
+.classNum {
+  font-size: .75em;
+}
+
 footer {
   background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
