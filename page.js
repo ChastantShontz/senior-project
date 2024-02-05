@@ -17,10 +17,10 @@ function changePage(x) {
         reset(i);
       }
     }
-    for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
-      if (eval("sessionStorage." + document.getElementsByClassName("category")[i].id + "Open") == "closed") {
-        document.getElementsByClassName("category")[i].open = false;
-      }
+  }
+  for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
+    if (eval("sessionStorage." + document.getElementsByClassName("category")[i].id + "Open") == "closed") {
+      document.getElementsByClassName("category")[i].open = false;
     }
   }
   window.scrollTo(0, 0);
