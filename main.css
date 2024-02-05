@@ -509,6 +509,12 @@ ion-icon.contactMeIcon {
   align-items: center;
 }
 
+#resumeDownloadDescription {
+  display: inline-block;
+  font-size: 3em;
+  transform: translateY(.33em);
+}
+
 footer {
   background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
