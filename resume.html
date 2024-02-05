@@ -91,7 +91,7 @@
     <link href="normalize.css" hreflang="en-us" charset="utf-8" rel="preload stylesheet" as="style" fetchpriority="high" type="text/css">
     <link href="main.css" hreflang="en-us" charset="utf-8" rel="preload stylesheet" as="style" fetchpriority="high" type="text/css">
   </head>
-  <body onload="if (sessionStorage.firstPage == undefined) {sessionStorage.firstPage = 'true'}; changePage('resume')">
+  <body onload="if (sessionStorage.firstPage == undefined) {sessionStorage.firstPage = 'true'}; changePage('resume', event)">
     <header>
       <nav id="nav">
         <div id="headshot">
@@ -150,7 +150,7 @@
                 </div>
               </div>
               <div class="toggleCategoryCont" id="toggleSkillsCont">
-                <button type="button" class="toggleCategory defaultButton" id="toggleSkills" aria-label="Expand the 'Skills' section" onclick="toggleGrid('skills')">See More <span class="categoryArrow downArrow skillsArrow" id="skillsDownArrow">&#65088;</span></button>
+                <button type="button" class="toggleCategory defaultButton" id="toggleSkills" aria-label="Expand the 'Skills' section" onclick="toggleGrid('skills', event)">See More <span class="categoryArrow downArrow skillsArrow" id="skillsDownArrow">&#65088;</span></button>
               </div>
             </details>
             <details class="category" id="classes" open>
@@ -234,13 +234,13 @@
                 </div>
               </div>
               <div class="toggleCategoryCont" id="toggleSkillsCont">
-                <button type="button" class="toggleCategory defaultButton" id="toggleSkills" aria-label="Expand the 'Skills' section" onclick="toggleGrid('classes')">See More <span class="categoryArrow downArrow skillsArrow" id="skillsDownArrow">&#65088;</span></button>
+                <button type="button" class="toggleCategory defaultButton" id="toggleSkills" aria-label="Expand the 'Skills' section" onclick="toggleGrid('classes', event)">See More <span class="categoryArrow downArrow skillsArrow" id="skillsDownArrow">&#65088;</span></button>
               </div>
             </details>
             <details class="category" id="jobs" open>
               <summary class="categoryHeading" id="jobsHeading" onclick="toggleSection('jobs')"><h2 class="headingInline" id="jobsHeadingInline">Jobs</h2></summary>
               <div class="toggleCategoryCont" id="toggleSkillsCont">
-                <button type="button" class="toggleCategory defaultButton" id="toggleSkills" aria-label="Expand the 'Skills' section" onclick="toggleGrid('jobs')">See More <span class="categoryArrow downArrow skillsArrow" id="skillsDownArrow">&#65088;</span></button>
+                <button type="button" class="toggleCategory defaultButton" id="toggleSkills" aria-label="Expand the 'Skills' section" onclick="toggleGrid('jobs', event)">See More <span class="categoryArrow downArrow skillsArrow" id="skillsDownArrow">&#65088;</span></button>
               </div>
             </details>
           </div>
