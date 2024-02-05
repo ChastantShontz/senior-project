@@ -75,11 +75,13 @@ function toggleSection(x, event) {
 function openSection(x) {
   var category = x;
   document.getElementById(category).open = true;
+  eval("sessionStorage." + category + "Open = 1");
 }
 
 function closeSection(x) {
   var category = x;
   document.getElementById(category).open = false;
+  eval("sessionStorage." + category + "Open = 2");
 }
 
 function toggleGrid(x, event) {
