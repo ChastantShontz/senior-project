@@ -60,31 +60,37 @@ function toggleSection(x, event) {
   var category = x;
   if (event.type == "load") {
     if ((eval("sessionStorage." + category + "Open") == 1) || (eval("sessionStorage." + category + "Open") == undefined)) {
-      openSection(category);
+      openSection(category, event);
     }
     else if (eval("sessionStorage." + category + "Open") == 2) {
-      closeSection(category);
+      closeSection(category, event);
     }
   }
   else if (event.type == "click") {
     if (eval("sessionStorage." + category + "Open") == 1) {
-      eval("sessionStorage." + category + "Open = 2");
+      closeSection(category, event);
     }
     else if (eval("sessionStorage." + category + "Open") == 2) {
-      eval("sessionStorage." + category + "Open = 1");
+      openSection(category, event);
     }
   }
 }
 
-function openSection(x) {
+function openSection(x, event) {
   var category = x;
-  document.getElementById(category).open = true;
+  if (event.type == "load") {
+    document.getElementById(category).open = true;
+  }
+  document.getElementById(category + "Heading").ariaLabel = "Close the '" + (category.charAt(0)).toUpperCase() + category.substring(1) + "' section";
   eval("sessionStorage." + category + "Open = 1");
 }
 
-function closeSection(x) {
+function closeSection(x, event) {
   var category = x;
-  document.getElementById(category).open = false;
+  if (event.type == "load") {
+    document.getElementById(category).open = false;
+  }
+  document.getElementById(category + "Heading").ariaLabel = "Open the '" + (category.charAt(0)).toUpperCase() + category.substring(1) + "' section";
   eval("sessionStorage." + category + "Open = 2");
 }
 
