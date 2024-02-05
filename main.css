@@ -414,6 +414,7 @@ ion-icon.contactMeIcon {
 
 #categories {
   width: 100%;
+  margin-bottom: 1em;
 }
 
 .category {
@@ -427,6 +428,10 @@ ion-icon.contactMeIcon {
   padding: 1em;
   border: .2em solid transparent;
   margin-bottom: 2em;
+}
+
+#jobs {
+  margin-bottom: 0;
 }
 
 .categoryHeading {
@@ -517,6 +522,7 @@ ion-icon.contactMeIcon {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: -1em;
   align-items: center;
 }
 
