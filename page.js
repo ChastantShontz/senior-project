@@ -3,6 +3,9 @@
 function changePage() {
   if (sessionStorage.firstPage == "true") {
     sessionStorage.firstPage = "false";
+    sessionStorage.skills = "open";
+    sessionStorage.classes = "open";
+    sessionStorage.jobs = "open";
   }
   else if (sessionStorage.firstPage == "false") {
     for (var i = 0; i < document.getElementsByClassName("navListItem").length; i++) {
@@ -14,6 +17,11 @@ function changePage() {
           ), 250);
         }
         reset(i);
+      }
+    }
+    for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
+      if (eval("sessionStorage." + document.getElementsByClassName("category")[i].id) == "close") {
+        document.getElementsByClassName("category")[i].open = false;
       }
     }
   }
@@ -42,4 +50,14 @@ function downloadResume(x) {
   var element = x;
   const day = new Date();
   document.getElementById(element).download = "Chastant_Shontz_Resume_" + day.getFullYear() + "-" + (((+day.getMonth() + 1) < 10) ? ("0" + (+day.getMonth() + 1)) : (+day.getMonth() + 1)) + "-" + ((day.getDate() < 10) ? ("0" + day.getDate()) : (day.getDate()));
+}
+
+function toggleDetails(x) {
+  var category = x;
+  if (eval("sessionStorage." + category) == "open") {
+    eval("sessionStorage." + category + " = \"close\"");
+  }
+  else if (eval("sessionStorage." + category) == "close") {
+    eval("sessionStorage." + category + " = \"open\"");
+  }
 }
