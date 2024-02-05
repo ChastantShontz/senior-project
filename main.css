@@ -551,6 +551,12 @@ ion-icon.contactMeIcon {
   transition: background 2s ease 0s;
 }
 
+#bioHeading {
+  margin-left: 1em;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
 footer {
   background: linear-gradient(175deg, #1B376F, 10%, var(--blue), 80%, #244994);
   width: 100%;
