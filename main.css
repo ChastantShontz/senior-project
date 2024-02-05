@@ -512,10 +512,23 @@ ion-icon.contactMeIcon {
   align-items: center;
 }
 
-#resumeDownloadDescription {
+#resumeDownloadLink {
   display: inline-block;
+  background: text var(--blue);
+  color: transparent;
   font-size: 3em;
   transform: translateY(.33em);
+  user-select: none;
+}
+
+#resumeDownloadDescription {
+  background: text linear-gradient(60deg, transparent 0% 40%, var(--white) 47.5% 52.5%, transparent 60% 100%) -2em;
+  color: inherit;
+}
+
+#resumeDownloadDescription:hover {
+  background: text linear-gradient(60deg, transparent 0% 40%, var(--white) 47.5% 52.5%, transparent 60% 100%) 2em;
+  transition: background 2s ease 0s;
 }
 
 footer {
