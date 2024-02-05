@@ -183,6 +183,7 @@ input[type="submit"].defaultButton:active {
 }
 
 summary {
+  width: fit-content;
   font-weight: bold;
   cursor: pointer;
 }
