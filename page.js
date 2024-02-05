@@ -20,12 +20,8 @@ function changePage(x, event) {
   }
   if (page == "resume") {
     for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
-      if (eval("sessionStorage." + document.getElementsByClassName("category")[i].id + "Open") == "closed") {
-        document.getElementsByClassName("category")[i].open = false;
-      }
-    }
-    for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
       var category = document.getElementsByClassName("category")[i].id;
+      toggleSection(category, event);
       toggleGrid(category, event);
     }
   }
@@ -56,13 +52,23 @@ function downloadResume(x) {
   document.getElementById(element).download = "Chastant_Shontz_Resume_" + day.getFullYear() + "-" + (((+day.getMonth() + 1) < 10) ? ("0" + (+day.getMonth() + 1)) : (+day.getMonth() + 1)) + "-" + ((day.getDate() < 10) ? ("0" + day.getDate()) : (day.getDate()));
 }
 
-function toggleSection(x) {
+function toggleSection(x, event) {
   var category = x;
-  if ((eval("sessionStorage." + category + "Open") == "open") || (eval("sessionStorage." + category + "Open") == undefined)) {
-    eval("sessionStorage." + category + "Open = \"closed\"");
+  if (event.type == "load") {
+    if ((eval("sessionStorage." + category + "Open") == 1) || (eval("sessionStorage." + category + "Open") == undefined)) {
+      document.getElementById(category).open = true;
+    }
+    else if (eval("sessionStorage." + category + "Open") == 2) {
+      document.getElementById(category).open = false;
+    }
   }
-  else if (eval("sessionStorage." + category + "Open") == "closed") {
-    eval("sessionStorage." + category + "Open = \"open\"");
+  else if (event.type == "click") {
+    if ((eval("sessionStorage." + category + "Open") == 1) || (eval("sessionStorage." + category + "Open") == undefined)) {
+      eval("sessionStorage." + category + "Expand = 2");
+    }
+    else if (eval("sessionStorage." + category + "Open") == 2) {
+      eval("sessionStorage." + category + "Expand = 1");
+    }
   }
 }
 
@@ -75,7 +81,6 @@ function toggleGrid(x, event) {
           document.getElementsByClassName(category + "GridItem")[j].style.display = "none";
         }
       }
-      eval("sessionStorage." + category + "Expand = 2");
     }
     else if (eval("sessionStorage." + category + "Expand") == 1) {
       for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
@@ -83,7 +88,6 @@ function toggleGrid(x, event) {
           document.getElementsByClassName(category + "GridItem")[j].style.display = "block";
         }
       }
-      eval("sessionStorage." + category + "Expand = 1");
     }
   }
   else if (event.type == "click") {

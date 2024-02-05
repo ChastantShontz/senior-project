@@ -110,7 +110,7 @@
         <div class="modal" id="criteria">
           <div id="categories">
             <details class="category" id="skills" open>
-              <summary class="categoryHeading" id="skillsHeading" onclick="toggleSection('skills')"><h2 class="headingInline" id="skillsHeadingInline">Skills</h2></summary>
+              <summary class="categoryHeading" id="skillsHeading" onclick="toggleSection('skills', event)"><h2 class="headingInline" id="skillsHeadingInline">Skills</h2></summary>
               <div class="categoryGrid" id="skillsGrid">
                 <div class="categoryGridItem skillsGridItem" id="html">
                   <h3 class="categoryLabel skillsLabel" id="htmlLabel">&lt;html&gt;</h3>
@@ -154,7 +154,7 @@
               </div>
             </details>
             <details class="category" id="classes" open>
-              <summary class="categoryHeading" id="classesHeading" onclick="toggleSection('classes')"><h2 class="headingInline" id="classesHeadingInline">Classes</h2></summary>
+              <summary class="categoryHeading" id="classesHeading" onclick="toggleSection('classes', event)"><h2 class="headingInline" id="classesHeadingInline">Classes</h2></summary>
               <div class="categoryGrid" id="classesGrid">
                 <div class="categoryGridItem classesGridItem" id="frontEndDevelopmentForTheWeb">
                   <h3 class="categoryLabel classessLabel" id="frontEndDevelopmentForTheWebLabel">Front-End Development For the Web <span class="classNum" id="frontEndDevelopmentForTheWebNum">(COMM 329)</span></h3>
@@ -238,7 +238,7 @@
               </div>
             </details>
             <details class="category" id="jobs" open>
-              <summary class="categoryHeading" id="jobsHeading" onclick="toggleSection('jobs')"><h2 class="headingInline" id="jobsHeadingInline">Jobs</h2></summary>
+              <summary class="categoryHeading" id="jobsHeading" onclick="toggleSection('jobs', event)"><h2 class="headingInline" id="jobsHeadingInline">Jobs</h2></summary>
               <div class="toggleCategoryCont" id="toggleSkillsCont">
                 <button type="button" class="toggleCategory defaultButton" id="toggleSkills" aria-label="Expand the 'Skills' section" onclick="toggleGrid('jobs', event)">See More <span class="categoryArrow downArrow skillsArrow" id="skillsDownArrow">&#65088;</span></button>
               </div>
