@@ -63,7 +63,7 @@ function toggleSection(x, event) {
     }
   }
   else if (event.type == "click") {
-    if ((eval("sessionStorage." + category + "Open") == 1) || (eval("sessionStorage." + category + "Open") == undefined)) {
+    if (eval("sessionStorage." + category + "Open") == 1) {
       eval("sessionStorage." + category + "Open = 2");
     }
     else if (eval("sessionStorage." + category + "Open") == 2) {
@@ -85,19 +85,19 @@ function closeSection(x) {
 function toggleGrid(x, event) {
   var category = x;
   if (event.type == "load") {
-    if ((eval("sessionStorage." + category + "Expand") == 2) || (eval("sessionStorage." + category + "Expand") == undefined)) {
-      collapseGrid(category);
-    }
-    else if (eval("sessionStorage." + category + "Expand") == 1) {
+    if (eval("sessionStorage." + category + "Expand") == 1) {
       expandGrid(category);
+    }
+    else if ((eval("sessionStorage." + category + "Expand") == 2) || (eval("sessionStorage." + category + "Expand") == undefined)) {
+      collapseGrid(category);
     }
   }
   else if (event.type == "click") {
-    if ((eval("sessionStorage." + category + "Expand") == 2) || (eval("sessionStorage." + category + "Expand") == undefined)) {
-      expandGrid(category);
-    }
-    else if (eval("sessionStorage." + category + "Expand") == 1) {
+    if (eval("sessionStorage." + category + "Expand") == 1) {
       collapseGrid(category);
+    }
+    else if (eval("sessionStorage." + category + "Expand") == 2) {
+      expandGrid(category);
     }
   }
 }
