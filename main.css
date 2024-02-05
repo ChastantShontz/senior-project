@@ -68,10 +68,6 @@ header {
 .navListItem {
   border-radius: .5em;
   background: linear-gradient(to right, rgba(31, 7, 87, .5), rgba(31, 7, 87, .5)) left / 0 100%;
-  padding-left: .5em;
-  padding-right: .5em;
-  padding-top: .1em;
-  padding-bottom: .25em;
   color: transparent;
   transition: all .25s ease 0s;
   user-select: none;
@@ -98,6 +94,10 @@ header {
   display: inline-block;
   position: relative;
   background: text linear-gradient(to right, var(--linkBlue) 0% 50%, var(--white) 50% 100%) right / 200% 100%;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top: .1em;
+  padding-bottom: .25em;
   color: inherit;
   transition: all .25s ease 0s;
 }
@@ -110,9 +110,9 @@ header {
 .navLink::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: .2em;
   right: 100%;
-  bottom: 0;
+  bottom: .2em;
   background: var(--linkBlue);
   height: .1em;
   transition: right .25s ease 0s;
@@ -120,7 +120,7 @@ header {
 
 .navLink:hover::after,
 .currentNavLink::after {
-  right: 0;
+  right: .2em;
 }
 
 .modalCont {
