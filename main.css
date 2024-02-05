@@ -183,8 +183,8 @@ header {
 }
 
 #introHeading {
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: .25em;
+  margin-bottom: .25em;
 }
 
 #introText {
@@ -306,7 +306,7 @@ ion-icon.contactMeIcon {
 .websiteFrame {
   border-radius: .5em;
   border: .2em solid var(--blue);
-  margin-bottom: .25em;
+  margin-bottom: .5em;
 }
 
 .websiteButtonLinksCont {
