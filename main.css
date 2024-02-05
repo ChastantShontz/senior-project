@@ -369,8 +369,10 @@ ion-icon.contactMeIcon {
 .websiteUrl {
   border-radius: .1em;
   background: linear-gradient(175deg, rgba(27, 55, 111, .75), rgba(45, 91, 184, .75), rgba(36, 73, 148, .75)) left / 0 100%;
-  padding: .25em;
+  width: fit-content;
+  padding-left: .25em;
   padding-top: .1em;
+  padding-bottom: .25em;
 }
 
 .websiteUrl:hover {
@@ -383,6 +385,7 @@ ion-icon.contactMeIcon {
 }
 
 .websiteUrlLink {
+  padding-right: .25rem;
   font-size: 1.1em;
   font-weight: bold;
 }
