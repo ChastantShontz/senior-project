@@ -111,8 +111,8 @@ function expandGrid(x) {
       document.getElementsByClassName(category + "GridItem")[i].style.display = "block";
     }
   }
-  document.getElementById("toggle" + (category.charAt(0)).toUpperCase() + category.substring(1)).innerHTML = "See Less <span class=\"categoryArrow upArrow " + category + "Arrow\" id=\"" + category + "UpArrow\">&#65087;</span>";
-  document.getElementById("toggle" + (category.charAt(0)).toUpperCase() + category.substring(1)).ariaLabel = "Collapse the '" + (category.charAt(0)).toUpperCase() + category.substring(1) + "' section";
+  document.getElementById(category + "Button").innerHTML = "See Less <span class=\"categoryArrow upArrow " + category + "Arrow\" id=\"" + category + "UpArrow\">&#65087;</span>";
+  document.getElementById(category + "Button").ariaLabel = "Collapse the '" + (category.charAt(0)).toUpperCase() + category.substring(1) + "' section";
   eval("sessionStorage." + category + "Expand = 1");
 }
 
@@ -123,7 +123,7 @@ function collapseGrid(x) {
       document.getElementsByClassName(category + "GridItem")[i].style.display = "none";
     }
   }
-  document.getElementById("toggle" + (category.charAt(0)).toUpperCase() + category.substring(1)).innerHTML = "See More <span class=\"categoryArrow downArrow " + category + "Arrow\" id=\"" + category + "DownArrow\">&#65088;</span>";
-  document.getElementById("toggle" + (category.charAt(0)).toUpperCase() + category.substring(1)).ariaLabel = "Expand the '" + (category.charAt(0)).toUpperCase() + category.substring(1) + "' section";
+  document.getElementById(category + "Button").innerHTML = "See More <span class=\"categoryArrow downArrow " + category + "Arrow\" id=\"" + category + "DownArrow\">&#65088;</span>";
+  document.getElementById(category + "Button").ariaLabel = "Expand the '" + (category.charAt(0)).toUpperCase() + category.substring(1) + "' section";
   eval("sessionStorage." + category + "Expand = 2");
 }

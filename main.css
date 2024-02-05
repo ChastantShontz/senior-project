@@ -448,14 +448,14 @@ ion-icon.contactMeIcon {
   margin-left: .25em;
 }
 
-.toggleCategoryCont {
+.categoryButtonCont {
   display: flex;
   justify-content: center;
   width: 100%;
   align-items: center;
 }
 
-.toggleCategory {
+.categoryButton {
   border-radius: .5em;
   background-clip: padding-box,
                    padding-box,
@@ -474,13 +474,13 @@ ion-icon.contactMeIcon {
   font-weight: bold;
 }
 
-.toggleCategory:hover {
+.categoryButton:hover {
   background-image: linear-gradient(175deg, rgba(27, 55, 111, .9), rgba(45, 91, 184, .9), rgba(36, 73, 148, .9)),
                     linear-gradient(175deg, var(--white), var(--white)),
                     linear-gradient(175deg, #1B376F, var(--blue), #244994);
 }
 
-.toggleCategory:active {
+.categoryButton:active {
   background-image: linear-gradient(175deg, rgba(27, 55, 111, .75), rgba(45, 91, 184, .75), rgba(36, 73, 148, .75)),
                     linear-gradient(175deg, var(--white), var(--white)),
                     linear-gradient(175deg, #1B376F, var(--blue), #244994);
