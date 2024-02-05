@@ -486,8 +486,15 @@ ion-icon.contactMeIcon {
                     linear-gradient(175deg, #1B376F, var(--blue), #244994);
 }
 
-.downArrow {
+.categoryArrow {
   display: inline-block;
+}
+
+.upArrow {
+  transform: translateY(-.25em);
+}
+
+.downArrow {
   transform: translateY(.25em);
 }
 
