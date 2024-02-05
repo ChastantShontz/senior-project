@@ -56,56 +56,68 @@ function toggleSection(x, event) {
   var category = x;
   if (event.type == "load") {
     if ((eval("sessionStorage." + category + "Open") == 1) || (eval("sessionStorage." + category + "Open") == undefined)) {
-      document.getElementById(category).open = true;
+      openSection(category);
     }
     else if (eval("sessionStorage." + category + "Open") == 2) {
-      document.getElementById(category).open = false;
+      closeSection(category);
     }
   }
   else if (event.type == "click") {
     if ((eval("sessionStorage." + category + "Open") == 1) || (eval("sessionStorage." + category + "Open") == undefined)) {
-      eval("sessionStorage." + category + "Expand = 2");
+      eval("sessionStorage." + category + "Open = 2");
     }
     else if (eval("sessionStorage." + category + "Open") == 2) {
-      eval("sessionStorage." + category + "Expand = 1");
+      eval("sessionStorage." + category + "Open = 1");
     }
   }
+}
+
+function openSection(x) {
+  var category = x;
+  document.getElementById(category).open = true;
+}
+
+function closeSection(x) {
+  var category = x;
+  document.getElementById(category).open = false;
 }
 
 function toggleGrid(x, event) {
   var category = x;
   if (event.type == "load") {
     if ((eval("sessionStorage." + category + "Expand") == 2) || (eval("sessionStorage." + category + "Expand") == undefined)) {
-      for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
-        if (j >= 6) {
-          document.getElementsByClassName(category + "GridItem")[j].style.display = "none";
-        }
-      }
+      collapseGrid(category);
     }
     else if (eval("sessionStorage." + category + "Expand") == 1) {
-      for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
-        if (j >= 6) {
-          document.getElementsByClassName(category + "GridItem")[j].style.display = "block";
-        }
-      }
+      expandGrid(category);
     }
   }
   else if (event.type == "click") {
     if ((eval("sessionStorage." + category + "Expand") == 2) || (eval("sessionStorage." + category + "Expand") == undefined)) {
-      for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
-        if (j >= 6) {
-          document.getElementsByClassName(category + "GridItem")[j].style.display = "block";
-        }
-      }
-      eval("sessionStorage." + category + "Expand = 1");
+      expandGrid(category);
     }
     else if (eval("sessionStorage." + category + "Expand") == 1) {
-      for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
-        if (j >= 6) {
-          document.getElementsByClassName(category + "GridItem")[j].style.display = "none";
-        }
-      }
-      eval("sessionStorage." + category + "Expand = 2");
+      collapseGrid(category);
     }
   }
+}
+
+function expandGrid(x) {
+  var category = x;
+  for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
+    if (j >= 6) {
+      document.getElementsByClassName(category + "GridItem")[j].style.display = "block";
+    }
+  }
+  eval("sessionStorage." + category + "Expand = 1");
+}
+
+function collapseGrid(x) {
+  var category = x;
+  for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
+    if (j >= 6) {
+      document.getElementsByClassName(category + "GridItem")[j].style.display = "none";
+    }
+  }
+  eval("sessionStorage." + category + "Expand = 2");
 }
