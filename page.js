@@ -1,6 +1,7 @@
 // Functions
 
-function changePage() {
+function changePage(x) {
+  var page = x;
   if (sessionStorage.firstPage == "true") {
     sessionStorage.firstPage = "false";
     sessionStorage.skills = "open";
