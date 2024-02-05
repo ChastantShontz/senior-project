@@ -168,7 +168,7 @@ header {
   height: 20em;
   width: 100%;
   border: .25em solid transparent;
-  margin-bottom: .5em;
+  margin-bottom: .25em;
 }
 
 #picCaption {
@@ -418,8 +418,33 @@ ion-icon.contactMeIcon {
   margin-bottom: 2em;
 }
 
+.categoryHeading {
+  margin-bottom: .5em;
+}
+
 .categoryHeading::marker {
   font-size: 1.5em;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.categoryGridItem {
+  margin: .5em;
+}
+
+.categoryLabel {
+  margin-bottom: .1em;
+}
+
+.categoryText {
+  margin-left: .25em;
 }
 
 footer {
