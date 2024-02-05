@@ -418,10 +418,6 @@ ion-icon.contactMeIcon {
   margin-bottom: 2em;
 }
 
-.categoryHeading {
-  width: fit-content;
-}
-
 .categoryHeading::marker {
   font-size: 1.5em;
 }
