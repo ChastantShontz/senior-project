@@ -24,6 +24,16 @@ function changePage(x) {
         document.getElementsByClassName("category")[i].open = false;
       }
     }
+    for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
+      var category = document.getElementsByClassName("category")[i].id;
+      if ((eval("sessionStorage." + category + "Toggle") == "collapsed") || (eval("sessionStorage." + category + "Toggle") == undefined)) {
+        for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
+          if (j >= 6) {
+            document.getElementsByClassName(category + "GridItem")[j].style.display = "none";
+          }
+        }
+      }
+    }
   }
   window.scrollTo(0, 0);
 }
