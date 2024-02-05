@@ -428,7 +428,7 @@ ion-icon.contactMeIcon {
 
 .categoryGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 100%;
   width: 100%;
   padding-left: 5%;
@@ -436,7 +436,7 @@ ion-icon.contactMeIcon {
 }
 
 .categoryGridItem {
-  margin: .5em;
+  margin: 1em;
 }
 
 .categoryLabel {
