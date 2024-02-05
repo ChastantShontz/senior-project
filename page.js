@@ -26,13 +26,13 @@ function changePage(x) {
     }
     for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
       var category = document.getElementsByClassName("category")[i].id;
-      if ((eval("sessionStorage." + category + "Toggle") == "collapsed") || (eval("sessionStorage." + category + "Toggle") == undefined)) {
+      if ((eval("sessionStorage." + category + "Toggle") == 2) || (eval("sessionStorage." + category + "Toggle") == undefined)) {
         for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
           if (j >= 6) {
             document.getElementsByClassName(category + "GridItem")[j].style.display = "none";
           }
         }
-        eval("sessionStorage." + category + "Toggle = \"collapsed\"");
+        eval("sessionStorage." + category + "Toggle = 2");
       }
     }
   }
@@ -75,20 +75,20 @@ function toggleSection(x) {
 
 function toggleGrid(x) {
   var category = x;
-  if ((eval("sessionStorage." + category + "Toggle") == "collapsed") || (eval("sessionStorage." + category + "Toggle") == undefined)) {
+  if ((eval("sessionStorage." + category + "Toggle") == 2) || (eval("sessionStorage." + category + "Toggle") == undefined)) {
     for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
       if (j >= 6) {
         document.getElementsByClassName(category + "GridItem")[j].style.display = "block";
       }
     }
-    eval("sessionStorage." + category + "Toggle = \"expanded\"");
+    eval("sessionStorage." + category + "Toggle = 1");
   }
-  else if (eval("sessionStorage." + category + "Toggle") == "expanded") {
+  else if (eval("sessionStorage." + category + "Toggle") == 1) {
     for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
       if (j >= 6) {
         document.getElementsByClassName(category + "GridItem")[j].style.display = "none";
       }
     }
-    eval("sessionStorage." + category + "Toggle = \"collapsed\"");
+    eval("sessionStorage." + category + "Toggle = 2");
   }
 }
