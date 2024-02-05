@@ -104,9 +104,9 @@ function toggleGrid(x, event) {
 
 function expandGrid(x) {
   var category = x;
-  for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
-    if (j >= 6) {
-      document.getElementsByClassName(category + "GridItem")[j].style.display = "block";
+  for (var i = 0; i < document.getElementsByClassName(category + "GridItem").length; i++) {
+    if (i >= 6) {
+      document.getElementsByClassName(category + "GridItem")[i].style.display = "block";
     }
   }
   eval("sessionStorage." + category + "Expand = 1");
@@ -114,9 +114,9 @@ function expandGrid(x) {
 
 function collapseGrid(x) {
   var category = x;
-  for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
-    if (j >= 6) {
-      document.getElementsByClassName(category + "GridItem")[j].style.display = "none";
+  for (var i = 0; i < document.getElementsByClassName(category + "GridItem").length; i++) {
+    if (i >= 6) {
+      document.getElementsByClassName(category + "GridItem")[i].style.display = "none";
     }
   }
   eval("sessionStorage." + category + "Expand = 2");
