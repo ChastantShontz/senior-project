@@ -4,9 +4,6 @@ function changePage(x) {
   var page = x;
   if (sessionStorage.firstPage == "true") {
     sessionStorage.firstPage = "false";
-    sessionStorage.skillsOpen = "open";
-    sessionStorage.classesOpen = "open";
-    sessionStorage.jobsOpen = "open";
   }
   else if (sessionStorage.firstPage == "false") {
     for (var i = 0; i < document.getElementsByClassName("navListItem").length; i++) {
@@ -55,7 +52,7 @@ function downloadResume(x) {
 
 function toggleDetails(x) {
   var category = x;
-  if (eval("sessionStorage." + category + "Open") == "open") {
+  if ((eval("sessionStorage." + category + "Open") == "open") || (eval("sessionStorage." + category + "Open") == undefined)) {
     eval("sessionStorage." + category + "Open = \"closed\"");
   }
   else if (eval("sessionStorage." + category + "Open") == "closed") {
