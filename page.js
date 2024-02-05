@@ -4,9 +4,9 @@ function changePage(x) {
   var page = x;
   if (sessionStorage.firstPage == "true") {
     sessionStorage.firstPage = "false";
-    sessionStorage.skills = "open";
-    sessionStorage.classes = "open";
-    sessionStorage.jobs = "open";
+    sessionStorage.skillsOpen = "open";
+    sessionStorage.classesOpen = "open";
+    sessionStorage.jobsOpen = "open";
   }
   else if (sessionStorage.firstPage == "false") {
     for (var i = 0; i < document.getElementsByClassName("navListItem").length; i++) {
@@ -21,7 +21,7 @@ function changePage(x) {
       }
     }
     for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
-      if (eval("sessionStorage." + document.getElementsByClassName("category")[i].id) == "close") {
+      if (eval("sessionStorage." + document.getElementsByClassName("category")[i].id + "Open") == "close") {
         document.getElementsByClassName("category")[i].open = false;
       }
     }
@@ -55,10 +55,10 @@ function downloadResume(x) {
 
 function toggleDetails(x) {
   var category = x;
-  if (eval("sessionStorage." + category) == "open") {
-    eval("sessionStorage." + category + " = \"close\"");
+  if (eval("sessionStorage." + category + "Open") == "open") {
+    eval("sessionStorage." + category + "Open = \"close\"");
   }
-  else if (eval("sessionStorage." + category) == "close") {
-    eval("sessionStorage." + category + " = \"open\"");
+  else if (eval("sessionStorage." + category + "Open") == "close") {
+    eval("sessionStorage." + category + "Open = \"open\"");
   }
 }
