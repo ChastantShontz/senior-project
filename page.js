@@ -23,6 +23,10 @@ function changePage(x, event) {
       var category = document.getElementsByClassName("category")[i].id;
       toggleSection(category, event);
       toggleGrid(category, event);
+      if (document.getElementsByClassName(category + "GridItem").length < 6) {
+        document.getElementById(category + "Grid").style.marginBottom = "0";
+        document.getElementById(category + "ButtonCont").style.display = "none";
+      }
     }
   }
   window.scrollTo(0, 0);
