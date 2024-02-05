@@ -18,9 +18,11 @@ function changePage(x) {
       }
     }
   }
-  for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
-    if (eval("sessionStorage." + document.getElementsByClassName("category")[i].id + "Open") == "closed") {
-      document.getElementsByClassName("category")[i].open = false;
+  if (page == "resume") {
+    for (var i = 0; i < document.getElementsByClassName("category").length; i++) {
+      if (eval("sessionStorage." + document.getElementsByClassName("category")[i].id + "Open") == "closed") {
+        document.getElementsByClassName("category")[i].open = false;
+      }
     }
   }
   window.scrollTo(0, 0);
