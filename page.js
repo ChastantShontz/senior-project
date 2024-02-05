@@ -111,6 +111,7 @@ function expandGrid(x) {
       document.getElementsByClassName(category + "GridItem")[i].style.display = "block";
     }
   }
+  document.getElementById("toggle" + (category.charAt(0)).toUpperCase() + category.substring(1)).ariaLabel = "Collapse the '" + (category.charAt(0)).toUpperCase() + category.substring(1) + "' section";
   eval("sessionStorage." + category + "Expand = 1");
 }
 
@@ -121,5 +122,6 @@ function collapseGrid(x) {
       document.getElementsByClassName(category + "GridItem")[i].style.display = "none";
     }
   }
+  document.getElementById("toggle" + (category.charAt(0)).toUpperCase() + category.substring(1)).ariaLabel = "Expand the '" + (category.charAt(0)).toUpperCase() + category.substring(1) + "' section";
   eval("sessionStorage." + category + "Expand = 2");
 }
