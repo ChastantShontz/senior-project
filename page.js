@@ -32,6 +32,7 @@ function changePage(x) {
             document.getElementsByClassName(category + "GridItem")[j].style.display = "none";
           }
         }
+        eval("sessionStorage." + category + "Toggle = \"collapsed\"");
       }
     }
   }
@@ -62,12 +63,32 @@ function downloadResume(x) {
   document.getElementById(element).download = "Chastant_Shontz_Resume_" + day.getFullYear() + "-" + (((+day.getMonth() + 1) < 10) ? ("0" + (+day.getMonth() + 1)) : (+day.getMonth() + 1)) + "-" + ((day.getDate() < 10) ? ("0" + day.getDate()) : (day.getDate()));
 }
 
-function toggleDetails(x) {
+function toggleSection(x) {
   var category = x;
   if ((eval("sessionStorage." + category + "Open") == "open") || (eval("sessionStorage." + category + "Open") == undefined)) {
     eval("sessionStorage." + category + "Open = \"closed\"");
   }
   else if (eval("sessionStorage." + category + "Open") == "closed") {
     eval("sessionStorage." + category + "Open = \"open\"");
+  }
+}
+
+function toggleGrid(x) {
+  var category = x;
+  if ((eval("sessionStorage." + category + "Toggle") == "collapsed") || (eval("sessionStorage." + category + "Toggle") == undefined)) {
+    for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
+      if (j >= 6) {
+        document.getElementsByClassName(category + "GridItem")[j].style.display = "block";
+      }
+    }
+    eval("sessionStorage." + category + "Toggle = \"expanded\"");
+  }
+  else if (eval("sessionStorage." + category + "Toggle") == "expanded") {
+    for (var j = 0; j < document.getElementsByClassName(category + "GridItem").length; j++) {
+      if (j >= 6) {
+        document.getElementsByClassName(category + "GridItem")[j].style.display = "none";
+      }
+    }
+    eval("sessionStorage." + category + "Toggle = \"collapsed\"");
   }
 }
