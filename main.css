@@ -409,13 +409,13 @@ ion-icon.contactMeIcon {
   align-items: center;
 }
 
+#categories {
+  width: 100%;
+}
+
 .category {
   width: 100%;
   margin-bottom: 2em;
-}
-
-#jobs {
-  margin-bottom: 0;
 }
 
 .categoryHeading {
